@@ -19,7 +19,7 @@ current_mood = "angry"
 style = "abusive"
 
 # Base URL for Groq's LLaMA API endpoint (this is hypothetical and will depend on Groq's actual setup)
-os.environ['GROQ_KEY']="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"
+os.environ['GROQ_KEY']="x"
 MAX_RETRIES = 10
 
 async def connect():
@@ -30,10 +30,6 @@ async def connect():
     return await RobotClient.at_address(params.viam_address, opts)
 
 class LlamaRetriever():
-    '''
-    Using Llama API from https://console.groq.com/docs/text-chat
-    Available models: https://console.groq.com/docs/models 
-    '''
     def __init__(self, model='llama3-8b-8192'):
         self.client = Groq(
             api_key=os.environ['GROQ_KEY'],
@@ -71,9 +67,6 @@ class LlamaRetriever():
 model = LlamaRetriever(model='llama-3.2-3b-preview')
 
 def listen_command():
-    """
-    Capture audio input from the microphone and convert it to text.
-    """
     recognizer = sr.Recognizer()
     with sr.Microphone() as source:
         print("Listening for your command...")
@@ -91,9 +84,6 @@ def listen_command():
         return "Sorry, I couldn't understand."
 
 def speak_response(text):
-    """
-    Use gTTS to convert text to speech and play it.
-    """
     # Create an audio file from the response text
     tts = gTTS(text=text, lang='en')
     audio_file = "response.mp3"
@@ -107,9 +97,6 @@ def speak_response(text):
     #os.remove(audio_file)
 
 def ai_command(command):
-    """
-    Generate a response quote based on the input command, current mood, and style using LLaMA model from Groq.
-    """
     try:
         if command == "I am giving you a command": 
             system_message= "Do as said in prompt"
