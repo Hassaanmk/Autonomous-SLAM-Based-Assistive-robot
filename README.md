@@ -5,7 +5,9 @@
 ## Overview
 This project focuses on developing an **Autonomous SLAM-Based Assistive Robot** with autonomous navigation and interaction capabilities. The robot is designed to assist users in various environments by utilizing SLAM (Simultaneous Localization and Mapping) and interactive features.
 
-<img src="./Assets/Robot.png" width="150" alt="Custom Assistive Robot Frame">
+<div align="center">
+  <img src="./Assets/Robot.png" width="150" alt="Custom Assistive Robot Frame">
+</div>
 
 ## Features
 - **SLAM-based localization** using **RPLIDAR A1**.
