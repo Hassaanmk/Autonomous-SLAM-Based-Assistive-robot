@@ -10,29 +10,29 @@ This project focuses on developing an **Autonomous SLAM-Based Assistive Robot** 
 </div>
 
 ## Features
-- **SLAM-based localization** using **RPLIDAR A1**.
-- **Navigation** implemented using the **Viam SDK**.
-- **Interaction capabilities** usig the **Viam OpenAI Integration**.
-- **Testing and integration** with **articulated robotics** in **ROS Humble**.
+- **SLAM-based localization** using **RPLIDAR A1** and **SLAM Toolbox**.
+- **Navigation and path planning** using **ROS2 Navigation Stack (Nav2)**.
+- **Interactive capabilities** via **robot face animations**.
+- **Integration with articulated robotics in ROS Humble**.
 - **Modular and expandable design** for future improvements.
 
-## Project Status
-🚧 **Under Development** 🚧
-- Currently being tested with **articulated robotics**.
-- Continuous improvements in localization and interaction.
 
 ## Implementation Details
 ### Interaction Ability
-We leverage the **Viam OpenAI Integration Tutorial** for interactive capabilities:  
+- Robot features **animated face expressions** for interactive communication.
+- Future scope includes **gesture response**.
+- We leverage the **Viam OpenAI Integration Tutorial** for voice interaction.
 🔗 [Viam OpenAI Integration](https://github.com/viam-labs/tutorial-openai-integration/tree/main)
 
 ### SLAM and Localization
-For localization, we utilize the **RPLIDAR A1** in combination with **Viam's Cartographer resource**:  
-🔗 [Viam Cartographer SLAM](https://docs.viam.com/operate/reference/services/slam/cartographer/)
+- Implemented using **RPLIDAR A1** and **SLAM Toolbox** in **ROS2 Humble**.
+- Odometry is fused with LiDAR scans for accurate localization.
+- Visualization in **Rviz2** for live mapping.
 
 ### Navigation
-Navigation is implemented using **Viam SDK**:  
-🔗 [Viam SDK SLAM Services](https://python.viam.dev/autoapi/viam/services/slam/index.html)
+- Uses **ROS2 Nav2** stack for path planning and obstacle avoidance.
+- Differential drive controlled via **Arduino + Motor Driver**.
+- Teleoperation node allows manual testing via keyboard 
 
 ## Hardware Setup
 - **Custom Assistive Robot Frame** (Image shown below)
@@ -47,7 +47,7 @@ This architecture shows the **hardware connections** between the motors, encoder
 </div>
 
 ## Dependencies
-- **Python** (for Viam SDK integration)
+- **Python** 
 - **ROS Humble** (for robotics testing)
 - **Viam SDK & APIs**
 - **RPLIDAR A1 drivers**
@@ -57,6 +57,13 @@ This architecture shows the **hardware connections** between the motors, encoder
   <img src="./Assets/software_architecture.png" width="600" alt="Software & ROS2 System Architecture">
 </div>
 
+## Future Improvements
+- Multi-modal perception (camera + audio)
+- Voice commands and speech response
+- Power optimization and autonomous docking
+
+## Authors
+Khadeeja Khan, Hassaan Muhammad Khan, Narmeen Sabah Siddiqui, Abdul Rafey Beig
 
 ## Installation & Setup
 1. Clone the repository:
