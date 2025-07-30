@@ -40,11 +40,23 @@ Navigation is implemented using **Viam SDK**:
 - **Embedded computing unit** for real-time processing
 - **Sensors and actuators** for interactive movement
 
+This architecture shows the **hardware connections** between the motors, encoders, Arduino, Raspberry Pi, LiDAR, and host computer.
+
+<div align="center">
+  <img src="./Assets/hardware_architecture.png" width="600" alt="Hardware System Architecture">
+</div>
+
 ## Dependencies
 - **Python** (for Viam SDK integration)
 - **ROS Humble** (for robotics testing)
 - **Viam SDK & APIs**
 - **RPLIDAR A1 drivers**
+  The software stack leverages **ROS2**, **SLAM Toolbox**, and **Rviz2** for mapping, navigation, and teleoperation.
+
+<div align="center">
+  <img src="./Assets/software_architecture.png" width="600" alt="Software & ROS2 System Architecture">
+</div>
+
 
 ## Installation & Setup
 1. Clone the repository:
