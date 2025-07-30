@@ -65,6 +65,7 @@ This architecture shows the **hardware connections** between the motors, encoder
 
 ## Authors
 Khadeeja Khan, Hassaan Muhammad Khan, Narmeen Sabah Siddiqui, Abdul Rafey Beig
+Final Year Electrical Engineering Students, NUST'25
 
 ## Installation & Setup
 1. Clone the repository:
