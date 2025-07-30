@@ -52,7 +52,7 @@ This architecture shows the **hardware connections** between the motors, encoder
 - **Viam SDK & APIs**
 - **RPLIDAR A1 drivers**
 
-  The software stack leverages **ROS2**, **SLAM Toolbox**, and **Rviz2** for mapping, navigation, and teleoperation.
+The software stack leverages **ROS2**, **SLAM Toolbox**, and **Rviz2** for mapping, navigation, and teleoperation.
 
 <div align="center">
   <img src="./Assets/software_architecture.png" width="600" alt="Software & ROS2 System Architecture">
@@ -65,6 +65,7 @@ This architecture shows the **hardware connections** between the motors, encoder
 
 ## Authors
 Khadeeja Khan, Hassaan Muhammad Khan, Narmeen Sabah Siddiqui, Abdul Rafey Beig
+
 Final Year Electrical Engineering Students, NUST'25
 
 ## Installation & Setup
