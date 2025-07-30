@@ -51,6 +51,7 @@ This architecture shows the **hardware connections** between the motors, encoder
 - **ROS Humble** (for robotics testing)
 - **Viam SDK & APIs**
 - **RPLIDAR A1 drivers**
+
   The software stack leverages **ROS2**, **SLAM Toolbox**, and **Rviz2** for mapping, navigation, and teleoperation.
 
 <div align="center">
